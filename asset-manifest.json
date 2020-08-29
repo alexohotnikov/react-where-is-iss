@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/react-where-is-iss/static/js/main.53f86095.chunk.js",
+    "main.js.map": "/react-where-is-iss/static/js/main.53f86095.chunk.js.map",
+    "runtime-main.js": "/react-where-is-iss/static/js/runtime-main.209d2a68.js",
+    "runtime-main.js.map": "/react-where-is-iss/static/js/runtime-main.209d2a68.js.map",
+    "static/css/2.7151161e.chunk.css": "/react-where-is-iss/static/css/2.7151161e.chunk.css",
+    "static/js/2.1e7cd23f.chunk.js": "/react-where-is-iss/static/js/2.1e7cd23f.chunk.js",
+    "static/js/2.1e7cd23f.chunk.js.map": "/react-where-is-iss/static/js/2.1e7cd23f.chunk.js.map",
+    "index.html": "/react-where-is-iss/index.html",
+    "precache-manifest.ccda20c059e8db2480fb35c925a81e45.js": "/react-where-is-iss/precache-manifest.ccda20c059e8db2480fb35c925a81e45.js",
+    "service-worker.js": "/react-where-is-iss/service-worker.js",
+    "static/css/2.7151161e.chunk.css.map": "/react-where-is-iss/static/css/2.7151161e.chunk.css.map",
+    "static/js/2.1e7cd23f.chunk.js.LICENSE.txt": "/react-where-is-iss/static/js/2.1e7cd23f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209d2a68.js",
+    "static/css/2.7151161e.chunk.css",
+    "static/js/2.1e7cd23f.chunk.js",
+    "static/js/main.53f86095.chunk.js"
+  ]
+}
