@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import * as YA from 'react-yandex-maps';
 // styles:
 import "shards-ui/dist/css/shards.min.css"
+import "./index.css"
 import { Button } from 'shards-react'
 
 
@@ -37,7 +38,8 @@ const App = () => {
     const issPos = useMemo(() => {
         return issData ? {
             center: [issData.latitude, issData.longitude],
-            zoom: 4
+            zoom: 4,
+            type: 'yandex#hybrid'
         } : { center: [55.751574, 37.573856], zoom: 5 }
     }, [issData])
 
@@ -45,8 +47,16 @@ const App = () => {
         <React.StrictMode>
             <div style={{
                 textAlign: 'center',
-                marginBottom: '40px',
                 display: 'block',
+                position: 'absolute',
+                zIndex: 101,
+                margin: '0 auto',
+                width: '100%',
+                backgroundColor: 'white',
+                opacity: '.9',
+                padding: '10em',
+                fontSize: '.1em',
+                bottom: 0,
             }}>
                 <h1 style={{ fontWeight: 'bold' }}> Where is ISS now? </h1>
                  <Button onClick={getRealISSPos}> Update ISS Position</Button>
@@ -54,7 +64,7 @@ const App = () => {
             {/* Loaded data from API: {issPos.center.toString()}<br /> */}
             {issData && 
             <YA.YMaps >
-                <YA.Map width="100vw" height="300px" defaultState={issPos}>
+                <YA.Map width="100vw" height="100vh" defaultState={issPos}>
                     <YA.Placemark geometry={issPos.center} options={{
                     iconLayout: "default#image",
                     iconShadow: true,
