@@ -54,7 +54,7 @@ const App = () => {
                 width: '100%',
                 backgroundColor: 'white',
                 opacity: '.9',
-                padding: '10em',
+                padding: '10em 0',
                 fontSize: '.1em',
                 bottom: 0,
             }}>
